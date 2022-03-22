@@ -1,0 +1,8 @@
+public/keys.js
+.idea
+dist
+src
+package.json
+package-lock.json
+tailwind.config.js
+node_modules
