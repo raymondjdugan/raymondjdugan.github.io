@@ -521,7 +521,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .stars {
   color: white;
-  background-image: url("/public/weathermap/weathermap_images/stars.jpg");
+  background-image: url("/weathermap/weathermap_images/stars.jpg");
   background-repeat: no-repeat;
 }
 
@@ -579,6 +579,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.5rem;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -587,6 +605,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .mt-3 {
@@ -599,10 +621,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .mt-16 {
@@ -629,12 +647,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-\[calc\(40vh-4px\)\] {
-  height: calc(40vh - 4px);
-}
-
-.h-\[calc\(60vh\)\] {
-  height: calc(60vh);
+.h-\[200px\] {
+  height: 200px;
 }
 
 .h-10 {
@@ -643,30 +657,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
-}
-
-.h-\[calc\(100\%-40px\)\] {
-  height: calc(100% - 40px);
-}
-
-.h-5\/6 {
-  height: 83.333333%;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
-.h-\[120px\] {
-  height: 120px;
 }
 
 .h-2 {
@@ -703,6 +693,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[calc\(40vh-4px\)\] {
+  height: calc(40vh - 4px);
+}
+
+.h-\[calc\(60vh\)\] {
+  height: calc(60vh);
+}
+
+.h-\[calc\(100\%-40px\)\] {
+  height: calc(100% - 40px);
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-\[120px\] {
+  height: 120px;
 }
 
 .min-h-screen {
@@ -773,12 +795,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-0 {
