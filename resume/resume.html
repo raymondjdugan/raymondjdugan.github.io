@@ -7,36 +7,36 @@
     <link rel="stylesheet" href="resumeCss.css">
     <title>Raymond Dugan's Resume</title>
 </head>
-<body>
+<body class="bg-resume-background text-resume-text">
 <header class="text-center mt-3">
     <h1 class="text-6xl m-1">RAYMOND DUGAN</h1>
     <h2 class="text-5xl m-1">Software Developer</h2>
     <p class="">I am an Operation Iraqi Freedom Veteran with a passion for Full Stack Development.</p>
-    <ul class="flex justify-center">
-        <li class="flex">
-            <img class="w-[20px] h-[20px]" src="../resources/phone.255x256.png" alt="Phone Icon">
+    <ul class="flex justify-around mt-3 mb-2 bg-resume-text text-resume-background">
+        <li class="flex items-center">
+            <img class="w-[15px] h-[15px] mx-1" src="../resources/phone.255x256.png" alt="Phone Icon">
             <a href="">806-443-6352</a>
         </li>
-        <li class="flex">
-            <img class="w-[30px] h-[20px]" src="../resources/email.256x175.png" alt="Email Icon">
+        <li class="flex items-center ">
+            <img class="w-[20px] h-[15px] mx-1" src="../resources/email.256x175.png" alt="Email Icon">
             <a href="">raymondjdugan@gmail.com</a>
         </li>
-        <li class="flex">
-            <img class="w-[20px] h-[20px]" src="../resources/social-linkedin.256x256.png" alt="Linked-In Icon">
-            <a href="https://www.linkedin.com/in/raymond-dugan" target="_blank">@cody-the-duck</a>
+        <li class="flex items-center">
+            <img class="w-[15px] h-[15px] mx-1" src="../resources/social-linkedin.256x256.png" alt="Linked-In Icon">
+            <a href="https://www.linkedin.com/in/raymond-dugan" target="_blank">@raymond-dugan</a>
         </li>
-        <li class="flex">
-            <img class="w-[20px] h-[20px]" src="../resources/github.256x250.png" alt="Github Icon">
-            <a href="https://github.com/raymondjdugan" target="_blank">@cody-the-duck</a>
+        <li class="flex items-center">
+            <img class="w-[15px] h-[15px] mx-1" src="../resources/github.256x250.png" alt="Github Icon">
+            <a href="https://github.com/raymondjdugan" target="_blank">@raymondjdugan</a>
         </li>
     </ul>
 </header>
-<main class="">
+<main class="mt-4">
+    <div class="flex flex-wrap">
 
-    <div class="grid grid-rows-3 grid-flow-col gap-0">
-
-        <section class="skills">
-            <h2>SKILLS AND ABILITIES</h2>
+        <section class="skills flex flex-col  justify-center order-1 p-2 basis-full p-5 text-center">
+            <h2 class="text-2xl underline">SKILLS AND ABILITIES</h2>
+            <br>
             <div>HTML - CSS - Bootstrap - JavaScript - jQuery - Java SE - Java EE (Servlets, JSP) - Spring - MySQL -
                 Thymeleaf - Object-Oriented Programming - Test-Driven Development - Version Control with Git - Paired
                 Programming - TailwindCSS
@@ -44,23 +44,27 @@
             <div> Exposure to: PYTHON, C++, REACT, MONGODB, EXPRESS JS, NODE JS</div>
         </section>
 
-        <section class="military-experience">
-            <h2>MILITARY EXPERIENCE</h2>
+        <section class="military-experience flex flex-col  justify-center order-2 p-2 basis-1/2 p-5">
+            <h2 class="text-2xl underline" >MILITARY EXPERIENCE</h2>
+            <br>
             <div>Army National Guard - Houston, TX <br>
-                Field Artillery Tactical Data System Specialist / Nov 2010 - Jan 2012
-                <ul>
-                    <li>Ensured the utmost safety and accuracy as acting Fire Direction Supervisor for the entire
-                        organization. .
+                <i>Field Artillery Tactical Data System Specialist</i> / Nov 2010 - Jan 2012
+                <div class="">
+                <ul class="list-disc ml-10">
+                    <li class="">Ensured the utmost safety and accuracy as acting Fire Direction Supervisor for the entire
+                        organization.
                     </li>
-                    <li>Coordinated with team members to operate complex weapon systems according to strict safety and
+                    <li class="">Coordinated with team members to operate complex weapon systems according to strict safety and
                         quality control regulations.
                     </li>
-                    <li> Trained 80+ individuals on the data systems for Field Artillery.</li>
+                    <li class=""> Trained 80+ individuals on the data systems for Field Artillery.</li>
                 </ul>
+                </div>
             </div>
+            <br>
             <div>Army - Joint Base Lewis/McChord, Wa <br>
-                Field Artillery Tactical Data System Specialist / Jan 2007 - Oct 2010
-                <ul>
+               <i> Field Artillery Tactical Data System Specialist</i> / Jan 2007 - Oct 2010
+                <ul class="list-disc ml-10">
                     <li>Maintained full accountability for high value items, equipment and supplies.</li>
                     <li>Coordinated fire and troop movements with other personnel and units during training exercises.
                     </li>
@@ -69,11 +73,12 @@
             </div>
         </section>
 
-        <section class="professional-experience">
-            <h2>PROFESSIONAL EXPERIENCE</h2>
+        <section class="professional-experience flex flex-col  justify-center order-4 p-2 basis-1/2  p-5">
+            <h2 class="text-2xl underline" >PROFESSIONAL EXPERIENCE</h2>
+            <br>
             <div>Stefanini IT Solutions - Freeport, TX,<br>
                 <i>Deskside Technician I </i>/ Aug 2020 - Jul 2021
-                <ul>
+                <ul class="list-disc ml-10">
                     <li>Smart hand support with networking, server and communication technologies.</li>
                     <li>Selected to perform managerial duties in the absence of a supervisor</li>
                     <li> Windows and Mac support, including experience in the Command Line Interface and Terminal
@@ -81,9 +86,10 @@
                     </li>
                 </ul>
             </div>
+            <br>
             <div>Farmers Insurance - Arvada, CO,<br>
                 <i>Onsite Technical Support</i> / Oct 2017 - Jun 2020
-                <ul>
+                <ul class="list-disc ml-10">
                     <li>Assisted with ongoing computer maintenance, maintained software and troubleshoot software
                         issues.
                     </li>
@@ -93,24 +99,28 @@
             </div>
         </section>
 
-        <section class="projects">
-            <h2>DEVELOPMENT PROJECTS</h2>
+        <section class="projects flex flex-col  justify-center order-2 p-2 basis-1/2 p-5">
+            <h2 class="text-2xl underline" >DEVELOPMENT PROJECTS</h2>
+            <br>
             <p>Project 3</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, exercitationem, laborum.
                 Consequatur,
                 cumque debitis ea excepturi facere, fugit impedit nam natus officia quam ullam ut?</p>
+            <br>
             <p>Project 2</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, exercitationem, laborum.
                 Consequatur,
                 cumque debitis ea excepturi facere, fugit impedit nam natus officia quam ullam ut?</p>
+            <br>
             <p>Project 1</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, exercitationem, laborum.
                 Consequatur,
                 cumque debitis ea excepturi facere, fugit impedit nam natus officia quam ullam ut?</p>
         </section>
 
-        <section class="academic">
-            <h2>ACADEMIC</h2>
+        <section class="academic flex flex-col  justify-center order-4 p-2 basis-1/2 p-5">
+            <h2 class="text-2xl underline" >ACADEMIC</h2>
+            <br>
             <p>Codeup,<br>
                 Certification of Completion<br>
                 Dec 2021 - Jun 2022<br>
@@ -118,6 +128,7 @@
                 provides<br>
                 students with 670 hours of expert instruction in software development.<br>
             </p>
+            <br>
             <p>Capella University,<br>
                 Major in Information Technology<br>
                 Minor in System Development: Web Application<br>

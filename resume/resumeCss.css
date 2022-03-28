@@ -506,6 +506,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   visibility: visible;
 }
 
+.order-first {
+  order: -9999;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-last {
+  order: 9999;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-5 {
+  order: 5;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -567,6 +595,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-\[20px\] {
+  margin-left: 20px;
+}
+
+.ml-\[21px\] {
+  margin-left: 21px;
+}
+
+.ml-\[25px\] {
+  margin-left: 25px;
+}
+
+.ml-\[18px\] {
+  margin-left: 18px;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -585,6 +653,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .contents {
   display: contents;
+}
+
+.list-item {
+  display: list-item;
 }
 
 .hidden {
@@ -679,6 +751,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 30px;
 }
 
+.h-\[15px\] {
+  height: 15px;
+}
+
+.h-\[150px\] {
+  height: 150px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -711,12 +791,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 30px;
 }
 
+.w-\[15px\] {
+  width: 15px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-full {
+  flex-basis: 100%;
 }
 
 .border-collapse {
@@ -731,8 +823,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   resize: both;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
 .list-none {
   list-style-type: none;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.auto-cols-min {
+  grid-auto-columns: -webkit-min-content;
+  grid-auto-columns: min-content;
 }
 
 .grid-flow-row {
@@ -750,6 +863,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-3 {
@@ -796,6 +913,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0px;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -836,6 +957,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-b-blue-700 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(29 78 216 / var(--tw-border-opacity));
+}
+
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -864,6 +990,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-amber-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+}
+
+.bg-resume-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 54 51 / var(--tw-bg-opacity));
+}
+
+.bg-resume-text {
+  --tw-bg-opacity: 1;
+  background-color: rgb(131 232 186 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -912,8 +1048,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.5rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.indent-1 {
+  text-indent: 0.25rem;
+}
+
+.indent-3 {
+  text-indent: 0.75rem;
+}
+
+.indent-8 {
+  text-indent: 2rem;
+}
+
+.-indent-8 {
+  text-indent: -2rem;
+}
+
+.-indent-5 {
+  text-indent: -1.25rem;
+}
+
+.-indent-\[20px\] {
+  text-indent: -20px;
+}
+
+.-indent-10 {
+  text-indent: -2.5rem;
 }
 
 .align-middle {
@@ -968,6 +1136,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-black {
   font-weight: 900;
+}
+
+.text-resume-text {
+  --tw-text-opacity: 1;
+  color: rgb(131 232 186 / var(--tw-text-opacity));
+}
+
+.text-resume-background {
+  --tw-text-opacity: 1;
+  color: rgb(48 54 51 / var(--tw-text-opacity));
+}
+
+.text-dodger-blue {
+  --tw-text-opacity: 1;
+  color: rgb(30 144 255 / var(--tw-text-opacity));
 }
 
 .underline {
