@@ -1283,6 +1283,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .xl\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .xl\:h-5\/6 {
     height: 83.333333%;
   }
@@ -1309,6 +1319,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:w-1\/6 {
     width: 16.666667%;
+  }
+
+  .xl\:p-10 {
+    padding: 2.5rem;
   }
 
   .xl\:text-6xl {
