@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emilio Benavides">
+    <meta name="author" content="Raymond Dugan">
+    <title>BlockBuster Night</title>
+    <!--     CSS Styling For The Entire Page-->
+    <link rel='stylesheet' href="css/styles.css">
+    <!--    Custom Light Beam Animations-->
+    <link rel="stylesheet" href="css/lights.css">
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <p>Pick Sick Flicks</p>
+        <p><a href="" id="add-movie-modal">Add A New Movie</a></p>
+<!--        <label for="search">Search Movie:</label>-->
+<!--        <input type="text" name="search" id="search" placeholder="Search">-->
+        <label for="sort">Sort by: </label>
+        <select name="sort" id="sort">
+            <option value="Title">Title</option>
+            <option value="Rating">Rating</option>
+            <optgroup label="Genre">
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Horror">Horror</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="War">War</option>
+                <option value="Western">Western</option>
+            </optgroup>
+
+        </select>
+    </nav>
+</header>
+
+<main>
+    <!--    Main Movie List-->
+    <section class="container" id="movie-insert">
+        <h1>Get Your POPCORN READY!</h1>
+    </section>
+    <!--Single Movie Information Modal-->
+    <section id="movie-info" class="hidden"></section>
+    <!--    Create A New Movie Form Modal-->
+    <section class="create-movie-form hidden">
+        <button id="close-form">x</button>
+        <h1>Create new movie</h1>
+        <form>
+            <label for="title"></label>
+            <input type="text" placeholder="Title" name="title" id="title" required>
+            <button id="createMovie">Create my movie</button>
+        </form>
+    </section>
+
+    <!--Edit Movie Form Modal-->
+    <section class="edit-movie-section hidden">
+        <button id="close-edit-form">x</button>
+        <h1>Edit Movie</h1>
+        <form>
+            <label for="editTitle"></label>
+            <input type="text" placeholder="Title" name="title" id="editTitle">
+            <label for="editYear"></label>
+            <input type="text" placeholder="Year" name="year" id="editYear">
+            <label for="editGenre"></label>
+            <input type="text" placeholder="Genre" name="genre" id="editGenre">
+            <button id="editMovie">Edit my movie</button>
+        </form>
+    </section>
+    <!--    Light Beams Section-->
+    <div class="cone cone-left"></div>
+    <div class="cone cone-right"></div>
+    <div class="cone cone-left"></div>
+    <div class="cone cone-right"></div>
+    <!--    Overlay-->
+    <div class="overlay hidden"></div>
+</main>
+<!--Link key for OMDB API-->
+<script src="js/keys.js"></script>
+<!--Link for Jquery-->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<!--Links for custom JS-->
+<script src="js/scripts.js"></script>
+<script src="js/movies_api.js"></script>
+<script src="js/event_listeners.js"></script>
+</body>
+</html>

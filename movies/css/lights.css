@@ -1,0 +1,166 @@
+.cone {
+    position: fixed;
+    height: 0;
+    width: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 400px solid rgba(240, 243, 243, 0.7);
+    border-radius: 50%;
+    transform-origin: bottom center;
+}
+.cone-left  {
+    transform: skew(10deg);
+    animation: coneLeftAnimation 3s 0s infinite;
+}
+.cone-right {
+    transform: skew(10deg);
+    animation: coneRightAnimation 3s 0s infinite;
+}
+
+div:nth-of-type(1).cone{
+    bottom: -30px;
+    left: 8%;
+}
+div:nth-of-type(2).cone{
+    bottom: -30px;
+    left: 3%;
+}
+div:nth-of-type(3).cone{
+    bottom: -30px;
+    left: 95%;
+}
+div:nth-of-type(4).cone{
+    bottom: -30px;
+    left: 90%;
+}
+
+@keyframes coneRightAnimation {
+    0%{
+        transform: skew(-10deg);
+    }
+    5% {
+        transform: skew(-7deg);
+    }
+    10% {
+        transform: skew(-4deg);
+    }
+    15% {
+        transform: skew(-1deg);
+    }
+    20% {
+        transform: skew(2deg);
+    }
+    25% {
+        transform: skew(5deg);
+    }
+    30% {
+        transform: skew(8deg);
+    }
+    35% {
+        transform: skew(11deg);
+    }
+    40% {
+        transform: skew(14deg);
+    }
+    45% {
+        transform: skew(17deg);
+    }
+    50% {
+        transform: skew(20deg);
+    }
+    55% {
+        transform: skew(17deg);
+    }
+    60% {
+        transform: skew(14deg);
+    }
+    65% {
+        transform: skew(11deg);
+    }
+    70% {
+        transform: skew(8deg);
+    }
+    75% {
+        transform: skew(5deg);
+    }
+    80% {
+        transform: skew(2deg);
+    }
+    85% {
+        transform: skew(-1deg);
+    }
+    90% {
+        transform: skew(-4deg);
+    }
+    95% {
+        transform: skew(-7deg);
+    }
+    100%{
+        transform: skew(-10deg);
+    }
+}
+@keyframes coneLeftAnimation {
+    0%{
+        transform: skew(10deg);
+    }
+    5% {
+        transform: skew(7deg);
+    }
+    10% {
+        transform: skew(4deg);
+    }
+    15% {
+        transform: skew(1deg);
+    }
+    20% {
+        transform: skew(-2deg);
+    }
+    25% {
+        transform: skew(-5deg);
+    }
+    30% {
+        transform: skew(-8deg);
+    }
+    35% {
+        transform: skew(-11deg);
+    }
+    40% {
+        transform: skew(-14deg);
+    }
+    45% {
+        transform: skew(-17deg);
+    }
+    50% {
+        transform: skew(-20deg);
+    }
+    55% {
+        transform: skew(-17deg);
+    }
+    60% {
+        transform: skew(-14deg);
+    }
+    65% {
+        transform: skew(-11deg);
+    }
+    70% {
+        transform: skew(-8deg);
+    }
+    75% {
+        transform: skew(-5deg);
+    }
+    80% {
+        transform: skew(-2deg);
+    }
+    85% {
+        transform: skew(1deg);
+    }
+    90% {
+        transform: skew(4deg);
+    }
+    95% {
+        transform: skew(7deg);
+    }
+    100%{
+        transform: skew(10deg);
+    }
+}
