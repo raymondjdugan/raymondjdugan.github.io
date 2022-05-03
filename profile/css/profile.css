@@ -590,14 +590,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 24px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
 .order-1 {
   order: 1;
 }
@@ -639,9 +631,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.25rem;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .my-1 {
@@ -654,14 +646,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mt-3 {
@@ -698,10 +685,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-10 {
   margin-left: 2.5rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .block {
@@ -748,8 +731,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50px;
 }
 
+.h-\[calc\(40vh-4px\)\] {
+  height: calc(40vh - 4px);
+}
+
+.h-\[calc\(60vh\)\] {
+  height: calc(60vh);
+}
+
 .h-10 {
   height: 2.5rem;
+}
+
+.h-\[calc\(100\%-40px\)\] {
+  height: calc(100% - 40px);
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[120px\] {
+  height: 120px;
 }
 
 .h-2 {
@@ -782,34 +793,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-4 {
   height: 1rem;
-}
-
-.h-\[calc\(40vh-4px\)\] {
-  height: calc(40vh - 4px);
-}
-
-.h-\[calc\(60vh\)\] {
-  height: calc(60vh);
-}
-
-.h-\[calc\(100\%-40px\)\] {
-  height: calc(100% - 40px);
-}
-
-.h-5\/6 {
-  height: 83.333333%;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[120px\] {
-  height: 120px;
 }
 
 .h-\[15px\] {
@@ -862,10 +845,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-auto {
   flex: 1 1 auto;
-}
-
-.flex-grow {
-  flex-grow: 1;
 }
 
 .grow-0 {
@@ -936,16 +915,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
-.self-stretch {
-  align-self: stretch;
+.border-2 {
+  border-width: 2px;
 }
 
 .border {
   border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-0 {
@@ -980,11 +955,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-slate-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(15 23 42 / var(--tw-border-opacity));
-}
-
 .bg-medium-aquamarine {
   --tw-bg-opacity: 1;
   background-color: rgb(131 232 186 / var(--tw-bg-opacity));
@@ -993,11 +963,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-blizzard-blue {
@@ -1015,9 +980,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-outer-space {
+.bg-blue-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(48 54 51 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1088,9 +1053,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-2xl {
@@ -1098,14 +1063,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -1127,11 +1087,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-outer-space {
   --tw-text-opacity: 1;
   color: rgb(48 54 51 / var(--tw-text-opacity));
-}
-
-.text-medium-aquamarine {
-  --tw-text-opacity: 1;
-  color: rgb(131 232 186 / var(--tw-text-opacity));
 }
 
 .underline {
