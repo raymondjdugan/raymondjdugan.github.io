@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raymond Weather Map Project</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet"
+          href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+          type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="css/weathermap_styles.css">
+</head>
+<body class="">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Accu-Raymond</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#map-div" id="map-scroll">Map<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="d-flex mt-2 mt-md-0 ml-md-auto" id="input-btn">
+                <div id="geocoder" class="geocoder"></div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div id="main-div" class="d-flex">
+        <div id="current-day-info"></div>
+        <div id="other-forecasts">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="six-day-forecast-tab" data-toggle="tab" href="#six-day-forecast"
+                           role="tab" aria-controls="six-day-forecast" aria-selected="true">6-Day Forecast</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="hourly-forecast-tab" data-toggle="tab" href="#hourly-forecast"
+                           role="tab" aria-controls="hourly-forecast" aria-selected="false">Hourly Forecast</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="six-day-forecast" role="tabpanel"
+                         aria-labelledby="six-day-forecast">
+                        <div id="weather-cards" class="d-none d-lg-flex"></div>
+                    </div>
+                    <div class="tab-pane fade" id="hourly-forecast" role="tabpanel" aria-labelledby="hourly-forecast">
+                        <div class="d-none d-lg-flex" id="hourly"></div>
+                    </div>
+                </div>
+            </div>
+        <div class="d-none d-lg-flex text-center" id="ad-space">
+                IRVIN DOES CUSTOM COUNTER TOPS FOR A SUPER AFFORDABLE PRICE. <br> BEST STONE COUNTER TOPS.  FROM EUROPE IS OUR BEST SELLER RIGHT NOW!
+        </div>
+        <div id="carousel" class="carousel slide d-lg-none " data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+                <li data-target="#carousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner" id="carousel-append">
+            </div>
+        </div>
+    </div>
+
+    <div id="map-div">
+        <div class="d-none d-md-block" id="map"></div>
+    </div>
+</div>
+<!--Mapbox Geocoder Plugin API CDN-->
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+<!-- Mapbox JS API CDN-->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+<script src="js/keys.js"></script>
+<script src="js/weathermap_api_calls.js"></script>
+<script src="js/weathermap_functions.js"></script>
+<script src="js/weathermap_mapbox.js"></script>
+</body>
+</html>
